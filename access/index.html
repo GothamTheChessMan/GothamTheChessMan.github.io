@@ -1,0 +1,10 @@
+<!doctype html><meta charset=utf-8><title>Tesla authorization</title>
+<body style="font-family:system-ui,sans-serif;max-width:40em;margin:3em auto;padding:0 1em;line-height:1.5">
+<h2>✓ Tesla authorization received</h2>
+<p>Copy the code below and paste it back into Claude (or just copy the whole address-bar URL):</p>
+<pre id="out" style="background:#f4f4f4;padding:1em;border-radius:8px;white-space:pre-wrap;word-break:break-all"></pre>
+<script>
+  var p = new URLSearchParams(location.search);
+  document.getElementById('out').textContent = p.get('code') || location.href;
+</script>
+</body>
